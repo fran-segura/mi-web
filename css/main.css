@@ -1,0 +1,120 @@
+:root {
+    --color-yellow: #f9c500;
+    --color-red: #e54b4b;
+    --color-violet: #B0228C;
+    --color-gray: #444140;
+    --color-black: #1e1e24;
+    --color-green: #6a994e;
+    --color-white: #fff;
+    --color-white--transparent: #fff2;
+    --color-white--transparent-hard: #fff3;
+}
+
+body {
+    font-family: Arial;
+    background-image: linear-gradient(45deg, var(--color-red), var(--color-violet));
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Nav */
+
+.nav {
+    overflow-x: auto;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.nav__ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    grid-gap: .5rem;
+}
+
+.nav__link {
+    display: block;
+    background-color: var(--color-yellow);
+    padding: 1.3rem 1rem;
+    text-align: center;
+}
+
+.nav__item {
+    width: 100%;
+}
+
+/* Menu */
+
+.menu {
+    display: grid;
+    grid-gap: .5rem;
+}
+
+.menu__item {
+    background-color: var(--color-white--transparent);
+    text-align: center;
+    padding: .6rem;
+    padding-bottom: 2rem;
+    border: 1px solid var(--color-white--transparent-hard);
+}
+
+.menu__icon {
+    font-size: 2rem;
+    margin-top: .3rem;
+}
+
+.menu__title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Target */
+
+.target-product {
+    display: grid;
+    background-color: var(--color-white);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem auto;
+    grid-gap: 3rem;
+}
+
+.target-product__image {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 2rem 0 0 0;
+}
+
+.target-product__texts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.1rem;
+}
+
+.target-product__p {
+    margin: 1rem 1rem;
+}
+
+.target-product__title {
+    margin-top: 2rem;
+}
+
+.target-product__span {
+    display: flex;
+    justify-content: center;
+}
+
+.target-product__button {
+    margin: 1.5rem 0;
+    display: block;
+    background-color: var(--color-yellow);
+    padding: 1rem;
+    font-weight: normal;
+}
